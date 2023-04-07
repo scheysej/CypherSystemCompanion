@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.cyphersystemcompanion.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboardFragment_to_playerFragment"
+            app:destination="@id/playerFragment"/>
+        <action
+            android:id="@+id/action_dashboardFragment_to_dmFragment"
+            app:destination="@id/dmFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/playerFragment"
+        android:name="com.example.cyphersystemcompanion.PlayerFragment"
+        android:label="fragment_player"
+        tools:layout="@layout/fragment_player">
+        <action
+            android:id="@+id/action_playerFragment_to_dmFragment"
+            app:destination="@id/dmFragment"/>
+        <action
+            android:id="@+id/action_playerFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/dmFragment"
+        android:name="com.example.cyphersystemcompanion.DmFragment"
+        android:label="fragment_dm"
+        tools:layout="@layout/fragment_dm">
+        <action
+            android:id="@+id/action_dmFragment_to_playerFragment"
+            app:destination="@id/playerFragment"/>
+        <action
+            android:id="@+id/action_dmFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"/>
+    </fragment>
+
+</navigation>
