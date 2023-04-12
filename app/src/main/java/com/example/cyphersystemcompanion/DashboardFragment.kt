@@ -3,10 +3,10 @@ package com.example.cyphersystemcompanion
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
-import com.example.cyphersystemcompanion.databinding.FragmentPlayerBinding
+import com.example.cyphersystemcompanion.databinding.FragmentDashboardBinding
 
 class DashboardFragment : Fragment() {
-    private var _binding: FragmentPlayerBinding? = null
+    private var _binding: FragmentDashboardBinding? = null
 
     private val binding get() = _binding!!
 
@@ -18,7 +18,7 @@ class DashboardFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View?{
-        _binding = FragmentPlayerBinding.inflate(inflater, container, false)
+        _binding = FragmentDashboardBinding.inflate(inflater, container, false)
         val view = binding.root
         return view
     }
