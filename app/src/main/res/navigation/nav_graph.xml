@@ -23,4 +23,32 @@
         android:label="fragment_dm"
         tools:layout="@layout/fragment_dm"/>
 
+    <!--THIS IS THE START OF THE CENTER BUTTON FRAGMENTS ON THE DASHBOARD-->
+    <fragment
+        android:id="@+id/fociFragment"
+        android:name="com.example.cyphersystemcompanion.buttonFragments.FociFragment"
+        android:label="fragment_foci"
+        tools:layout="@layout/fragment_foci"/>
+    <fragment
+        android:id="@+id/typeFragment"
+        android:name="com.example.cyphersystemcompanion.buttonFragments.TypeFragment"
+        android:label="fragment_type"
+        tools:layout="@layout/fragment_type"/>
+    <fragment
+        android:id="@+id/descriptorFragment"
+        android:name="com.example.cyphersystemcompanion.buttonFragments.DescriptorFragment"
+        android:label="fragment_descriptor"
+        tools:layout="@layout/fragment_descriptor"/>
+    <fragment
+        android:id="@+id/flavorFragment"
+        android:name="com.example.cyphersystemcompanion.buttonFragments.FlavorFragment"
+        android:label="fragment_flavor"
+        tools:layout="@layout/fragment_flavor"/>
+    <fragment
+        android:id="@+id/abilitiesFragment"
+        android:name="com.example.cyphersystemcompanion.buttonFragments.AbilitiesFragment"
+        android:label="fragment_abilities"
+        tools:layout="@layout/fragment_abilities"/>
+
+
 </navigation>

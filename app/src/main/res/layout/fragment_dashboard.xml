@@ -8,11 +8,43 @@
     android:background="#2c2c2c"
     tools:context=".DashboardFragment">
 
+    <Button
+        android:id="@+id/abilitiesButton"
+        android:layout_width="170dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/mybutton"
+        android:text="Abilities"
+        android:textColor="#1c1c1c"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/equipmentButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descButton" />
+
+    <Button
+        android:id="@+id/equipmentButton"
+        android:layout_width="170dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="222dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/mybutton"
+        android:text="Equipment"
+        android:textColor="#1c1c1c"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flavorButton" />
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar6"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="#1c1c1c"
+        android:clickable="true"
+        android:focusable="true"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,5 +52,65 @@
         app:layout_constraintTop_toTopOf="parent"
         app:logo="@drawable/hamburger_foreground"
         app:title="Home"
-        app:titleTextColor="#d9d9d9"/>
+        app:titleTextColor="#ffe4b6" />
+
+    <Button
+        android:id="@+id/focusButton"
+        android:layout_width="170dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/mybutton"
+        android:text="Focus"
+        android:textColor="#1c1c1c"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/typeButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar6" />
+
+    <Button
+        android:id="@+id/descButton"
+        android:layout_width="170dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/mybutton"
+        android:text="Descriptor"
+        android:textColor="#1c1c1c"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/flavorButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/focusButton" />
+
+    <Button
+        android:id="@+id/flavorButton"
+        android:layout_width="170dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="222dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/mybutton"
+        android:text="Flavor"
+        android:textColor="#1c1c1c"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/typeButton" />
+
+    <Button
+        android:id="@+id/typeButton"
+        android:layout_width="170dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="222dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/mybutton"
+        android:text="Type"
+        android:textColor="#1c1c1c"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar6" />
 </androidx.constraintlayout.widget.ConstraintLayout>
