@@ -39,6 +39,10 @@ class DashboardFragment : Fragment() {
             val intent = Intent(context, AbilitiesActivity::class.java)
             startActivity(intent)
         }
+        binding.equipmentButton.setOnClickListener{
+            val intent = Intent(context, CypherActivity::class.java)
+            startActivity(intent)
+        }
 
         return view
 

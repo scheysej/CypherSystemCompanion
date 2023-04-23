@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2c2c2c"
-    tools:context=".DmFragment">
+    tools:context=".TypeActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar6"
@@ -18,25 +18,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:logo="@drawable/hamburger_foreground"
-        app:title="GM"
-        app:titleTextColor="#ffe4b6"/>
+        app:title="Types"
+        app:titleTextColor="#ffe4b6" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/typeList"
+        android:layout_width="409dp"
+        android:layout_height="659dp"
+        android:layout_marginTop="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar6">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Features Coming Soon"
-            android:textColor="@color/AccentColor"
-            android:layout_gravity="center_horizontal"
-            android:textSize="40dp"/>
-
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/toolbar6"
+        tools:listitem="@layout/type_item"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
